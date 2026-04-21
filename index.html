@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>醫院愛心捐款平台</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🏥 醫院愛心捐款平台</h1>
+    <p>您的捐款將幫助病患獲得更好的治療與照護</p>
+  </header>
+
+  <main>
+    <section class="donation-form">
+      <h2>我要捐款</h2>
+      <form id="donateForm" action="/donate" method="POST">
+        <label for="name">姓名：</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="amount">捐款金額 (NT$)：</label>
+        <input type="number" id="amount" name="amount" required min="10">
+
+        <button type="submit">前往付款</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 醫院基金會</p>
+  </footer>
+</body>
